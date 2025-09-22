@@ -7,8 +7,8 @@ btn-menu
 .btn-menu {
     display: inline-block;
     position: relative;
-    width: 24px;
-    height: 15px;
+    width: 55px;
+    height: 80px;
     background: none;
     border: none;
     cursor: pointer;
@@ -59,15 +59,15 @@ sidemenu
     position: absolute;
     left: 0;
     top: 0;
-    width: 48px;
+    width: 55px;
     height: 1261px;
     z-index: 99;
 }
 
 .btn-menu_wrap {
     position: absolute;
-    top: 50%;
-    left: 12px;
+    top: 80px;
+    left: 0;
     cursor: pointer;
 }
 
@@ -93,20 +93,53 @@ nav.open-menu {
     width: 100%;
 }
 
+.close_img{
+    display: none;
+    position: relative;
+    width: 55px;
+    height: 80px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.close_img_active .close_img{
+    display: block;
+}
 
 
-/*-----------------------
-æ¨ªå¹…1000pxä»¥ä¸Š
-------------------------*/
+.close_img_active .menu_img{
+    display: none;
+    position: relative;
+    width: 55px;
+    height: 80px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.btn_wrap_active{
+    right: 0;
+    position: absolute;
+    width: 55px;
+    height: 80px;
+}
+
+.close_img_active,.menu_img_active{
+    border: none;
+    width: 55px;
+    height: 80px;
+}
+
 
 @media screen and (min-width:1000px) {
     nav {
         width: 270px;
         opacity: 1;
     }
-    .btn-menu {
-        display: none;
-    }
+
     main {
         margin-left: 270px;
     }

@@ -165,6 +165,7 @@ ASIDE
 }
 
 .sidemenu_heading {
+    position: relative;
     background-color: #212121;
     padding: 15px 30px 15px 30px;
 }
@@ -193,7 +194,6 @@ ASIDE
 #global-nav ul {
     list-style: none;
     margin-left: 0;
-    padding: 15px 15px 15px 35px;
 }
 
 #global-nav > ul > li {
@@ -204,7 +204,7 @@ ASIDE
     color: #fff;
     text-decoration: none;
     display: block;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 20px 8px 38px;
     margin-right: 18px;
     -moz-transition: color .3s linear;
     -webkit-transition: color .3s linear;
@@ -228,7 +228,7 @@ ASIDE
     height: 16px;
     position: absolute;
     top: 50%;
-    right: -18px;
+    right: 20px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -271,45 +271,8 @@ ASIDE
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-
-
-/*
-#global-nav .sub-menu-head:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 18px;
-    margin: auto;
-    vertical-align: middle;
-    width: 8px;
-    height: 8px;
-    border-top: 1px solid #aeb4cb;
-    border-right: 1px solid #aeb4cb;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-}
-
-#global-nav .sub-menu.is-active > a:after,
-#global-nav .sub-menu-head:hover:after {
-    border-color: #fff;
-}
-
-#global-nav .is-active .sub-menu-head:after {
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-*/
-
-/* sub-menu */
 #global-nav .sub-menu-nav {
-    background: #032f55;
+    /* background: #032f55; */
     display: none;
     padding: 10px 0;
 
@@ -320,14 +283,46 @@ ASIDE
 
 
 #global-nav .sub-menu-nav a {
-    color: #aeb4cb;
+    color: #fff;
     padding: 8px 15px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-right: 0;
 }
 
 #global-nav .sub-menu-nav a:hover {
     color: #fff;
 }
 
+#global-nav .sub-menu-nav .sub-menu-nav-ttl{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 38px;
+    border-top: 1px solid #3E70BA;
+    border-bottom: 1px solid #3E70BA;
+    position: relative;
+}
+
+#global-nav .sub-menu-nav .sub-menu-nav-ttl::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: url(/tukyo/tukyo_current/img/top/right_arr.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#global-nav .sub-menu-nav-ul{
+    display: none;
+    padding: 0 38px;
+}
+
+.sub-menu-head_ic.minus-on:after{
+    content: none;
+}
 
 /* nav-toggle */
 #nav-toggle {

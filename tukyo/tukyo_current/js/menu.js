@@ -30,20 +30,16 @@
 //
 //btn.addEventListener('click', handleMenuToggle);
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.querySelector('.btn-menu');
-  const nav = document.querySelector('nav');
-  const header = document.querySelector('#sidemenu');
-
-  function handleMenuToggle() {
-    if (window.innerWidth <= 1000) {
-      const isOpen = nav.classList.toggle('open-menu');
-      header.classList.toggle('open');
-      //btn.textContent = isOpen ? '閉じる' : 'メニュー';
-    }
-  }
-
-  btn.addEventListener('click', handleMenuToggle);
+$(document).ready(function(){
+  $('.sub-menu > .sub-menu-head').click(function(e){
+    e.preventDefault();
+    $(this).siblings('.sub-menu-nav').toggle();
+    $('.sub-menu-head_ic').toggleClass('minus-on');
+  });
+  $('.sub-menu-nav-ttl').click(function(e){
+    e.preventDefault();
+    $('.sub-menu-nav-ul').toggle();
+  });
 });
+
+
