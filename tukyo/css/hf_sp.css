@@ -1,0 +1,285 @@
+/*hf_sp.css*/
+
+/*----------------------------------
+menuButton
+------------------------------------*/
+
+#menuButton > p {
+    font-size: 1.0rem;
+    bottom: 5px;
+}
+
+#menuButton {
+    width: 56px;
+    height: 56px;
+}
+
+#menuButton span, #menuButton::before, #menuButton::after {
+    top: -10px;
+}
+
+/*
+header {
+    height: 56px;
+}
+*/
+
+header.active {
+    height: 100%;
+}
+
+/*
+header.active #menuButton p.close {
+    display: none;
+    opacity: 0;
+    height: 0;
+}
+*/
+
+
+/*----------------------------------
+Main Navi
+------------------------------------*/
+
+.h_top_bt {
+    display: none;
+}
+
+.h_top_link.h_lang {
+    display: none;
+}
+
+.h_top_link.h_search {
+    display: none;
+}
+
+.h_ac > a,
+.h_doc > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h_top_link > a {
+    margin: 0 7px 0 7px;
+}
+
+.h_top_link > a span {
+    font-size: 1.0rem;
+}
+
+.page_head_wrap {
+    padding: 0 60px 0 15px;
+    height: 56px;
+}
+
+.h_logo {
+    width: 220px;
+    margin-left: 15px;
+}
+
+.h_top_link > a img {
+    margin: 0 auto 5px;
+}
+
+.h_top_link.h_ac {
+    display: none;
+}
+
+/*
+.h_doc > a img {
+    margin-top: 2px;
+}
+*/
+
+.h_top {
+    height: 100%;
+    align-items: center;
+}
+
+.menu-container > .menu.add_navi > div.show-on-mobile {
+    padding-top: 0;
+}
+
+.adnavi_logo {
+    width: 220px;
+    margin-top: 12px;
+}
+
+.h_top_link.h_inet {
+    display: none;
+}
+
+/*-----------------------------------
+Menu01
+------------------------------------*/
+
+ul.adnavi_menu01 {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+ul.adnavi_menu01:after {
+    content:"";
+    display: block;
+    width:48%;
+}
+
+ul.adnavi_menu01 li {
+    width: 48%;
+    margin: 0 0 12px;
+}
+
+/*-----------------------------------
+Menu02
+------------------------------------*/
+
+.menu-container > .menu.add_navi > div.show-on-mobile > .inner {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.adnavi_menu02 li.adnavi_search {
+    margin: 30px auto 0;
+}
+
+ul.adnavi_menu02 li.adnavi_inet {
+    width: fit-content;
+    max-width: 100%;
+    margin: 30px auto 0;
+}
+
+ul.adnavi_menu02 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+ul.adnavi_menu02 li.ic_link {
+    margin: 0 15px;
+}
+
+ul.adnavi_menu02 li.adnavi_inet a {
+    width: 240px;
+    max-width: 100%;
+}
+
+ul.adnavi_menu02 li.adnavi_inet a {
+    
+}
+
+ul.adnavi_menu02 li.ic_link a span {
+    font-size: 1.3rem;
+}
+
+/*-----------------------------------
+Menu03
+------------------------------------*/
+
+ul.adnavi_menu03 li {
+    width: 48.5%;
+    max-width: 48.5%;
+    margin-right: 3%;
+}
+
+ul.adnavi_menu03 li:nth-child(2n) {
+    margin-right: 0;
+}
+
+ul.adnavi_menu03 li a {
+    text-align: center;
+}
+
+ul.adnavi_menu03:after {
+    content:"";
+    display: block;
+    width: 49%;
+}
+
+/*-----------------------------------
+Menu04
+------------------------------------*/
+
+ul.adnavi_menu04 {
+    display: block;
+}
+
+ul.adnavi_menu04 > li {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+ul.adnavi_menu04 > li.box_links > a {
+    justify-content: center;
+}
+
+/*-----------------------------------
+æ¤œç´¢ãƒœãƒƒã‚¯ã‚¹
+------------------------------------*/
+
+.adnavi_search.sp {
+    display: block;
+    margin-bottom: 40px;
+}
+
+/*-----------------------------------
+FOOTER
+------------------------------------*/
+
+footer {
+    padding-top: 25px;
+}
+
+.ft_cont {
+    display: block;
+}
+
+.ft_cont_r {
+    display: none;
+}
+
+.ft_cont_l {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.ft_logo{
+    width: 320px;
+    max-width: 100%;
+    margin:  0 auto 25px;
+}
+
+footer .marks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .marks .jihee {
+    width: 92px;
+}
+
+footer .marks .p_mark {
+    width: 72px;
+}
+
+.ft_sns > a {
+    margin: 0 6px 0;
+}
+
+.ft_campus {
+    display: none;
+}
+
+/*---------------------------------------------
+Search
+---------------------------------------------*/
+
+.adnavi_search form {
+    height: 44px;
+}

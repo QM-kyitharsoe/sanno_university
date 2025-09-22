@@ -1,0 +1,35 @@
+/*print.css*/
+
+@page {
+    margin: 10mm;
+    size: 210mm 297mm; 
+}
+
+@media print {
+
+    body {
+        -webkit-print-color-adjust: exact;
+        width: 1360px; 
+        min-width: 100%;
+        zoom: 0.8;
+        position: relative;
+    }
+
+    section + section.new-none:not(:root) {
+        page-break-before: avoid;
+    }
+    .new-page {
+        page-break-before: always; 
+    }
+    .sp {
+        display: none!important;
+    }
+    header {
+        position: absolute;
+        display: none;
+    }
+    #pageTop {
+        display: none!important;
+    }
+    
+}
