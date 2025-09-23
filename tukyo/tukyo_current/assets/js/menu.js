@@ -34,11 +34,12 @@ $(document).ready(function(){
   $('.sub-menu > .sub-menu-head').click(function(e){
     e.preventDefault();
     $(this).siblings('.sub-menu-nav').toggle();
-    $('.sub-menu-head_ic').toggleClass('minus-on');
+    $(this).find('.sub-menu-head_ic').toggleClass('minus-on');
   });
   $('.sub-menu-nav-ttl').click(function(e){
     e.preventDefault();
-    $('.sub-menu-nav-ul').toggle();
+    $(this).toggleClass('sub-menu-nav-active');
+    $(this).next('ul').toggle();
   });
 });
 

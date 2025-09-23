@@ -284,7 +284,7 @@ ASIDE
 
 #global-nav .sub-menu-nav a {
     color: #fff;
-    padding: 8px 15px;
+    padding: 13px 15px;
     font-size: 1.3rem;
     font-weight: 400;
     margin-right: 0;
@@ -311,7 +311,7 @@ ASIDE
     left: 0;
     width: 8px;
     height: 8px;
-    background: url(/tukyo/tukyo_current/img/top/right_arr.png) no-repeat;
+    background: url(/tukyo/tukyo_current/assets/img/top/right_arr.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -320,8 +320,38 @@ ASIDE
     padding: 0 38px;
 }
 
+#global-nav .sub-menu-nav .sub-menu-nav-li{
+    position: relative;
+    padding: 20px 0 0 13px;
+}
+
+#global-nav .sub-menu-nav .sub-menu-nav-li::before{
+    content: " ";
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 8px;
+    height: 2px;
+    background: url(/tukyo/tukyo_current/assets/img/top/bar.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
 .sub-menu-head_ic.minus-on:after{
     content: none;
+}
+
+#global-nav .sub-menu-nav-ttl.sub-menu-nav-active{
+    border: none;
+    background: #3E70BA;
+    margin: 0;
+    padding: 14px 38px 14px 54px;
+}
+
+#global-nav .sub-menu-nav-ttl.sub-menu-nav-active::before{
+    left: 39px;
+    transform: translateY(-50%) rotate(90deg);
 }
 
 /* nav-toggle */
